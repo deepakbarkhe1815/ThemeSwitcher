@@ -1,0 +1,175 @@
+.theme-light{
+    --primary-color:#fff;
+    --secondary-color:whitesmoke;
+    --accent:#54c75b;
+    --font-color:#000;
+    --pure:#fff;
+}
+
+.theme-dark{
+    --primary-color:#121212;
+    --secondary-color:#0b0b0b;
+    --accent:#54c75b;
+    --font-color:#fff;
+    --pure:#fff;
+}
+
+.theme-occen{
+    --primary-color:#252c35;
+    --secondary-color:#20272e;
+    --accent:#54c75b;
+    --font-color:#fff;
+    --pure:#fff;
+}
+
+.theme-sepia{
+    --primary-color:#fbf1c7;
+    --secondary-color:#eadfb5;
+    --accent:#704214;
+    --font-color:#704214;
+    --pure:#fff;
+}
+
+*{
+	
+	
+	
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    font-family: sans-serif;
+    background: var(--primary-color);
+    color: var(--font-color);
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    
+   
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(43, 42, 40);
+}
+
+.container{
+    width: 1192px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+    box-shadow: 0,10px,0,0.1 red;
+    
+}
+
+nav .branding{
+    color: var(--accent) ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav ul li select{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    padding: 5px;
+    height: 2rem;
+    width: 10rem;
+    outline: none;
+    color: var(--font-color);
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+nav ul li a{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--font-color);
+   
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid #704214;
+
+}
+header{
+    margin-top: 70px;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    
+}
+
+
+
+header .hero-image img{
+    width: 40rem;
+    height: 25rem;
+    margin: 90px 0;
+    border-radius: 10px;
+    position: relative;
+    right: -100px;
+}
+
+
+header h1{
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 200;
+    margin-top: 11rem;
+    margin-bottom: 0.8rem;
+}
+
+header p{
+    font-size: 1.2rem;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.btn{
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 15px;
+    background: var(--accent);
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: var(--pure);
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(0.98);
+}
+
+.tutorials{
+    background: var(--secondary-color);
+    padding: 2rem;
+    height: 700px;
+    margin-top: 10px;
+}
